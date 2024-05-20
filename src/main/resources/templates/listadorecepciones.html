@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Listado de Recogidas</h1>
+    <table>
+        <thead>
+            <tr>Fecha</tr>
+            <tr>Referencia</tr>
+            <tr>Proveedor</tr>
+            <tr>Transporte</tr>
+            <tr>Fecha Prevista</tr>
+            <tr>Palets</tr>
+            <tr>Estado</tr>
+            <tr>Acciones</tr>
+        </thead>
+        <tbody>
+            <tr th:each="recepcion: ${recepciones}">
+                <td th:text="${recepcion.fecha}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
