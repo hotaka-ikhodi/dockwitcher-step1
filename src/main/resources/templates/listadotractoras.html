@@ -13,12 +13,16 @@
         <tr>
             <td>Matricula</td>
             <td>Modelo</td>
+            <td>PMA</td>
+            <td>Conductor</td>
         </tr>
     </thead>
     <tbody>
         <tr th:each="tractora: ${tractoras}">
             <td th:text="${tractora.matricula}"></td>
             <td th:text="${tractora.modelo.marca}"></td>
+            <td th:text="${tractora.caracteristicas.carga.pma}"></td>
+            <td th:text="${tractora.conductor !=null}? ${tractora.conductor.nombre} : 'Sin Conductor'"></td>
         </tr>
     </tbody>
 </table>
