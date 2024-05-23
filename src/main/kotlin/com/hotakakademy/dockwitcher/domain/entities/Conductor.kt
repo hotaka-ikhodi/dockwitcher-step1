@@ -6,14 +6,14 @@ import java.util.Date
 
 class Conductor : Entity<IConductorRepository>(){
     var nombre: String? = null
-    var indentificacion: String? = null
+    var identificacion: String? = null
     var licencia: String? = null
     var fechaCaducidad: Date? = null
     var telefono: String? = null
     var email: String? = null
     var formaciones: List<String> = mutableListOf()
     var observaciones: String? = null
-    val experiencia: Experiencia = Experiencia()
-    val disponibilidad: Disponibilidad = Disponibilidad()
-    val historial: List<Incidentes> = mutableListOf()
+    var experiencia: Experiencia = Experiencia()
+    var disponibilidad: Disponibilidad = Disponibilidad()
+    var historial: List<Incidentes> = mutableListOf()
 }

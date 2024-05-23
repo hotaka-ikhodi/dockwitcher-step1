@@ -1,8 +1,7 @@
 package com.hotakakademy.dockwitcher.domain.entities
 
 class Experiencia : ValueObject(){
-
-    val especificaciones: List<String> = mutableListOf()
-    val certificaciones: List<String> = mutableListOf()
-    val categorias: List<Categoria> = mutableListOf()
+    var especificaciones: List<String> = mutableListOf()
+    var certificaciones: List<String> = mutableListOf()
+    var categorias: List<Categoria> = mutableListOf()
 }
